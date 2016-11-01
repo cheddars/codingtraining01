@@ -9,3 +9,7 @@ lazy val root = (project in file(".")).
 	settings(
 	  name := "hello"
 	)
+
+val projectMainClass = "kr.oddly.ct01.part5.TipCalc"
+
+mainClass in (Compile, run) := Some(projectMainClass)
